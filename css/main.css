@@ -1,0 +1,73 @@
+body {
+	margin: 0;
+	padding: 0;
+	font: normal 100%/1.5 Georgia,serif;
+	background-color: #c7c0ae;
+}
+
+img {
+	display: block;
+	margin: 0 auto;
+}
+
+section {
+	padding: 10rem 0;
+}
+
+.sun {
+	width: 300px;
+}
+
+.sun-section {
+	background: transparent url("../img/mars-pano.jpg") no-repeat center top;
+	background-size: cover;
+}
+
+.dipper {
+	width: 300px;
+	opacity: 0;
+}
+
+.js-dipper-fade {
+	-webkit-animation: dipper-fade 1s linear forwards;
+}
+
+/*
+Don't forget to put in all the necessary webkits  with prefixes!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+*/
+@-webkit-keyframes dipper-fade {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+.shuttle {
+	width: 200px;
+	position: relative;
+	margin-top: 100px;
+}
+
+.shuttle-section {
+	background-color: #fea529;
+}
+
+.js-shuttle-fade {
+	-webkit-animation: shuttle-fade 300ms linear forwards;
+}
+
+@-webkit-keyframes shuttle-fade {
+	0% {
+		opacity: 0;
+		transform: translateY(100px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+
